@@ -67,6 +67,7 @@ body {
   font-size: var(--fs-400);
   font-weight: var(--fw-400);
   color: hsl(var(--clr-blue-400));
+  background-color: hsl(var(--clr-cyan-400));
 }
 
 /* A elements that don't have a class get default styles */
@@ -191,7 +192,6 @@ select {
   display: grid;
   place-items: center;
   padding-inline: 1.5rem;
-  background-color: hsl(var(--clr-cyan-400));
   background-image: url(/assets/bg-pattern-top.svg),
     url(/assets/bg-pattern-bottom.svg);
   background-position: right 52vw bottom 33vh, left 50vw top 48vh;
