@@ -235,8 +235,15 @@ select {
   justify-items: center;
   min-height: 17.5rem;
   background-image: url(/assets/bg-pattern-card.svg);
-  background-repeat: no-repeat;
-  background-size: 100% 50%;
+  background-repeat: repeat-x;
+  /*
+   * Safari's default behavior is to preserve the aspect ratio for SVG images, which is different from the other browsers.
+   * Setting a specific background-size would introduce white space on Safari especially when zooming in/out.
+   * We can either:
+   * 1) change background-size to 'auto' only which would still work fine in this example, or
+   * 2) add 'preserveAspectRatio: none' to the SVG image.
+   */
+  background-size: auto 50%;
   border-bottom: 1px solid hsl(var(--clr-neutral-200));
 }
 
