@@ -141,9 +141,6 @@ select {
 .fs-200 {
   font-size: var(--fs-200);
 }
-.fs-400 {
-  font-size: var(--fs-400);
-}
 .fs-600 {
   font-size: var(--fs-600);
 }
